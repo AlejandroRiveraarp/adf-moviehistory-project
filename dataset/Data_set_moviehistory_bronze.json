@@ -1,0 +1,41 @@
+{
+	"name": "Data_set_moviehistory_bronze",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"parametro_file_date": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@dataset().parametro_file_date",
+					"type": "Expression"
+				},
+				"fileSystem": "bronce"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"countryId": {
+					"type": "integer"
+				},
+				"countryIsoCode": {
+					"type": "string"
+				},
+				"countryName": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

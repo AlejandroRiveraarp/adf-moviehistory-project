@@ -1,0 +1,9 @@
+{
+	"name": "databricks-course-german-adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5778e459-86da-4e5b-8cd4-bf78eafe1702",
+		"tenantId": "ad766c20-9749-4e4b-80b2-1e73d5cf957f"
+	}
+}
