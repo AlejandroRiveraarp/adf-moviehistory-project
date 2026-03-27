@@ -38,3 +38,9 @@ Este componente forma parte de una arquitectura tipo Medallion Architecture:
 Escalabilidad mediante rutas dinámicas
 Separación clara por capas (data lake)
 Soporte para procesamiento incremental
+
+## 🏗️ Arquitectura del Pipeline
+
+- Azure Data Factory → Orquestación
+- Azure Data Lake Gen2 → Almacenamiento (Bronze, Silver, Gold)
+- Azure Databricks → Transformaciones
